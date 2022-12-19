@@ -24,3 +24,19 @@ arr -> [2,1,3,0]
 O[1]
 
 */
+
+
+
+
+let arr = [2,3,1,0]
+let n = arr.length
+console.log(arr);
+for(let i = 0 ; i < n; i++){
+    arr[i] = (arr[arr[i]]%n)*n+arr[i]
+}
+
+for(let i = 0 ; i < n ; i ++)
+    arr[i] = Number.parseInt(arr[i]/n)
+
+
+console.log(arr)
